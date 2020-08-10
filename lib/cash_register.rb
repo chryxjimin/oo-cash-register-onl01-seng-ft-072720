@@ -21,7 +21,7 @@ def add_item(title,price,quantity = 1)
    @items << title
  end
  @total += price*quantity
- @last_trans_amnt = price*quantity
+ @last_transaction = price*quantity
  @total
 end
 
@@ -37,7 +37,7 @@ end
 
 
 def void_last_transaction()
- @total = @total - @last_trans_amnt
+ @total = @total - @last_transaction
 end
 
 end
